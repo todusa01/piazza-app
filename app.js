@@ -14,7 +14,7 @@ app.use('/auth', authRoutes);
 app.use('/posts',postsRoute)
 
 app.get('/', (req,res) =>{
-    res.send('Homepage')
+    res.send('Welcome to Temidire Piazza App Homepage')
 })
 
 mongoose.connect(process.env.DB_CONNECTOR, ()=>{
